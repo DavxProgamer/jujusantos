@@ -1,0 +1,208 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-family:Poppins, sans-serif;
+
+background:linear-gradient(180deg,#1a0010,#33001f);
+
+color:white;
+
+}
+
+/* CARD */
+
+.card{
+
+width:360px;
+
+background:#450028;
+
+padding:35px;
+
+border-radius:22px;
+
+text-align:center;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.7);
+
+}
+
+/* FOTO */
+
+.avatar{
+
+width:130px;
+height:130px;
+
+margin:auto;
+margin-top:-90px;
+
+}
+
+.avatar img{
+
+width:130px;
+height:130px;
+
+border-radius:50%;
+
+border:5px solid #450028;
+
+object-fit:cover;
+
+box-shadow:0 0 20px rgba(255,80,160,0.4);
+
+}
+
+/* TITULO */
+
+h2{
+
+margin-top:15px;
+color:#ff6fb3;
+font-size:22px;
+
+}
+
+.sub{
+
+color:#ffc2e0;
+margin-bottom:20px;
+font-size:14px;
+
+}
+
+/* INPUT */
+
+input{
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:15px;
+
+border-radius:12px;
+
+border:none;
+
+font-size:16px;
+
+background:#fff0f7;
+
+}
+
+/* BOTÕES */
+
+.btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:14px;
+
+background:linear-gradient(45deg,#ff2e93,#ff6fb3);
+
+color:white;
+
+font-weight:bold;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.25s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 15px rgba(255,70,160,0.6);
+
+}
+
+/* LOADER */
+
+.loader{
+
+width:42px;
+height:42px;
+
+border:4px solid #ff9ad0;
+
+border-top:4px solid transparent;
+
+border-radius:50%;
+
+margin:20px auto;
+
+display:none;
+
+animation:girar 1s linear infinite;
+
+}
+
+@keyframes girar{
+
+0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+
+}
+
+/* PAGAMENTO */
+
+.pagamento{
+
+display:none;
+margin-top:20px;
+
+}
+
+#qrcode{
+
+width:210px;
+
+margin:20px auto;
+
+display:block;
+
+}
+
+#pixCode{
+
+width:100%;
+
+margin-bottom:12px;
+
+}
+
+.copiar{
+
+background:#ff4da6;
+
+}
+
+/* DETALHES */
+
+#detalhes{
+
+margin-top:10px;
+font-size:14px;
+color:#ffc2e0;
+
+}
