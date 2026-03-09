@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Pagamento Pix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="perfil.jpg" class="foto">
+
+<h2>Pagar com Pix</h2>
+
+<div class="valorBox">
+
+<span class="rs">R$</span>
+<input id="valor" type="number" placeholder="0,00">
+
+</div>
+
+<button id="pagarBtn" onclick="gerarPix()">
+
+<span id="btnText">Gerar pagamento</span>
+
+<div id="spinner" class="spinner"></div>
+
+</button>
+
+<div id="pagamento">
+
+<img id="qrcode">
+
+<textarea id="pixCode" readonly></textarea>
+
+<button class="copiar" onclick="copiarPix()">
+Copiar código Pix
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
